@@ -51,10 +51,10 @@ $eventMinute = EVENT_MINUTE; // Set your event minute
                                         <!-- <div id="timer" class="timer"></div> -->
                                         <div class="row">
                                             <div class="col-12">
-                                                <h3>Saturday</h3>
+                                                <h3>20 October 2024 Sunday</h3>
                                             </div>
                                             <div class="col-12">
-                                                Time : 11 PM to 12:30
+                                                Time : 11 AM to 1 PM
                                             </div>
                                         </div>
                                     </div>
@@ -579,14 +579,14 @@ $eventMinute = EVENT_MINUTE; // Set your event minute
                                     <!-- <div id="timermodal" class="timer"></div> -->
                                     <div class="row">
                                         <div class="col-12">
-                                            <h3>Saturday</h3>
+                                            <h3>20 October 2024 Sunday</h3>
                                         </div>
                                         <div class="col-12">
-                                            Time : 11 PM to 12:30
+                                            <h4>Time : 11 AM to 1 PM</h4>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="text-center p-5">
+                                <div class="text-center mt-2">
                                     <a class="btn btn-primary btn-lg" href="https://rzp.io/i/KNhuciEeUM"
                                         target="_blank">
                                         <span class="ffbtntxt"><i class="fa-solid fa-arrow-right-to-bracket"></i>
