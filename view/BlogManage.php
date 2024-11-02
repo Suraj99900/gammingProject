@@ -3,7 +3,7 @@
 // include header section of template
 require_once "../config.php";
 include_once ABS_PATH_TO_PROJECT . "view/CDN_Header.php";
-include_once ABS_PATH_TO_PROJECT . "view/leftBar.php";
+include_once ABS_PATH_TO_PROJECT . "view/NavBar.php";
 include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 
 $bIsLogin = $oSessionManager->isLoggedIn ? $oSessionManager->isLoggedIn : false;
@@ -21,68 +21,70 @@ if (!$bIsLogin) {
 <div class="main-content">
     <section class="section overflow">
 
-        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <!-- <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb pt-4">
                 <li class="breadcrumb-item"><a href="Dashboard.php"> Dashboard</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Blog Manage</li>
             </ol>
-        </nav>
+        </nav> -->
 
-        <div class="">
+        <div class="container-fluid padd-15">
             <!-- Dashboard Section form  start-->
-            <div class="row">
-                <div class="section-title padd-15">
+            <div class="row px-5 pt-lg-5 pt-md-5 pt-sm-3">
+                <div class="section-title padd-15 mt-5">
                     <h2>Blog Manage</h2>
                 </div>
             </div>
-        </div>
-        <div class="dashboard dashboard_container">
-            <button id="show__sidebar-btn" class="sidebar__toggle "><i class="fa-solid fa-arrow-right"></i></button>
-            <button id="hide__sidebar-btn" class="sidebar__toggle"><i class="fa-solid fa-arrow-left"></i></button>
-            <aside>
-                <ul>
-                    <li>
-                        <a href="userDashboard.php" class="shadow-lg p-3 mb-5 rounded "><i
-                                class="fa-regular fa-id-card"></i>
-                            <h5>Personal Info</h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="BlogManage.php?iActive=3" class="shadow-lg p-3 mb-5 rounded active"><i
-                                class="fa-solid fa-blog"></i>
-                            <h5>Blog</h5>
-                        </a>
-                    </li>
 
-                </ul>
-            </aside>
+            <div class="dashboard dashboard_container">
+                <button id="show__sidebar-btn" class="sidebar__toggle "><i class="fa-solid fa-arrow-right"></i></button>
+                <button id="hide__sidebar-btn" class="sidebar__toggle"><i class="fa-solid fa-arrow-left"></i></button>
+                <aside>
+                    <ul>
+                        <li>
+                            <a href="userDashboard.php" class="shadow-lg p-3 mb-5 rounded "><i
+                                    class="fa-regular fa-id-card"></i>
+                                <h5>Personal Info</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="BlogManage.php?iActive=3" class="shadow-lg p-3 mb-5 rounded active"><i
+                                    class="fa-solid fa-blog"></i>
+                                <h5>Blog</h5>
+                            </a>
+                        </li>
 
-            <main>
-                <div class="card shadow bg-card-low row userInfo padd-15 px-5">
-                    <div class="row my-3">
-                        <div class="col-12 float-right">
-                            <a href="./addBlogPage.php" type="button" class="btn btn-primary float-end"> Add blog</a>
+                    </ul>
+                </aside>
+
+                <main>
+                    <div class="card shadow bg-card-low row userInfo padd-15 px-5">
+                        <div class="row my-3">
+                            <div class="col-12 float-right">
+                                <a href="./addBlogPage.php" type="button" class="btnWAN btn-primary float-end mb-3"> Add
+                                    blog</a>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="row mt-2">
-                        <div class="col12">
-                            <div class="card custom-table">
-                                <h4 class="text-center">Manage Blog</h4>
-                                <table id="blogManageTable" class="display" style="width: 100%;">
-                                    <thead>
-                                        <th>Sr No</th>
-                                        <th>Title</th>
-                                        <th>Author Name</th>
-                                        <th>Action</th>
-                                    </thead>
-                                </table>
+                        <div class="row mb-5">
+                            <div class="col12">
+                                <div class="card custom-table shadow-lg" data-bs-theme="dark">
+                                    <h4 class="text-center">Manage Blog</h4>
+                                    <table id="blogManageTable" class="display" style="width: 100%;">
+                                        <thead>
+                                            <th>Sr No</th>
+                                            <th>Title</th>
+                                            <th>Author Name</th>
+                                            <th>Action</th>
+                                        </thead>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </main>
+                </main>
 
+            </div>
         </div>
     </section>
 
@@ -149,14 +151,14 @@ if (!$bIsLogin) {
 
 <!-- manu toggler start -->
 
-<div class="toggler-box">
+<!-- <div class="toggler-box">
     <div class="toggler-open icon">
         <i class="uil uil-angle-right-b"></i>
     </div>
     <div class="toggler-close icon">
         <i class="uil uil-angle-left-b"></i>
     </div>
-</div>
+</div> -->
 
 <!-- manu toggler end -->
 

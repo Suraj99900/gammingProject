@@ -1,0 +1,125 @@
+.main-content {
+    padding-left: 0px !important;
+}
+
+.navbar .logo a {
+    color: var(--text-black-900);
+    font-weight: 700;
+    padding: 30px 50px;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+.navbar .logo a span {
+    font-family: 'Clicker Script', cursive;
+    font-size: 2rem;
+    color: var(--skin-color);
+}
+
+.navbar .logo a::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    bottom: 12px;
+    left: 5px;
+}
+
+.navbar .logo a::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    top: 9px;
+    left: 250px;
+}
+
+.navbar .nav-toggler {
+    height: 40px;
+    width: 45px;
+    border: 1px solid var(--bg-black-50);
+    cursor: pointer;
+    position: fixed;
+    left: 300px;
+    top: 20px;
+    border-radius: 5px;
+    background: var(--bg-black-100);
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navbar .nav-toggler span{
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    display: inline-block;
+    position: relative;
+}
+
+.navbar .nav-toggler span::before {
+    content: '';
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+
+.navbar .nav-toggler span::after {
+    content: '';
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+.navbar li a {
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: block;
+    color: var(--text-black-900);
+    padding: 5px 15px;
+    /* border-bottom: 1px solid var(--bg-black-50); */
+}
+
+.navbar li a.active {
+    color: var(--skin-color) !important;
+}
+
+@media (max-width:991px) {
+
+    .navbar-toggle{
+        position: relative;
+        width: 10%;
+        top: -42px;
+        left: 85%;
+        color: black;
+        font-weight: bold;
+    }
+
+    .navbar {
+        padding-top: 30px;
+        transition: all 1s ease-in-out;
+    }
+}
+
+@media (max-width:767px) {
+
+    .navbar{
+        padding-top: 30px;
+    }
+}
+
+.icons-color{
+    color: var(--skin-color);
+}

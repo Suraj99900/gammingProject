@@ -30,7 +30,7 @@ $iActive = isset($_GET['iActive']) ? $_GET['iActive'] : '';
 
             <li>
                 <a href="renderBlog.php?iActive=4" class="<?php echo ($iActive == 4 ? "active" : "") ?>"><i
-                class="fa fa-blog"></i>Blog</a>
+                        class="fa fa-blog"></i>Blog</a>
             </li>
 
             <li>

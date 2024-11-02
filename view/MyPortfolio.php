@@ -2,7 +2,7 @@
 // include header section of template
 require_once "../config.php";
 include_once ABS_PATH_TO_PROJECT . "view/CDN_Header.php";
-include_once ABS_PATH_TO_PROJECT . "view/leftBar.php";
+include_once ABS_PATH_TO_PROJECT . "view/NavBar.php";
 include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 
 ?>
@@ -17,52 +17,61 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 <div class="main-content">
     <!-- home section start -->
     <section class="home section " id="home">
-        <div class="container">
+        <div class="container-fluid home padd-15">
             <div class="row">
-                <div class="home-info padd-15">
+                <div class="home-info col-md-4 px-5">
                     <h3 class="hello">
-                        Hello, my name is <span class="name">Suraj Jaiswal</span>
+                        Hello, I'm <span class="name">Suraj Jaiswal</span>
                     </h3>
-                    <h3 class="my-profession"><span class="typing">Full Stack Developer</span></h3>
-                    <p>I am a versatile web designer and full-stack developer with over a year of extensive experience.
-                        My expertise encompasses website design, graphic design, and much more. Additionally, I possess
-                        strong knowledge in web technologies, mobile app development, and software development, backed
-                        by 2 years of hands-on experience in PHP.</p>
-                    <a href="#contact" class="btn hire-me">Conatct me</a>
+                    <h3 class="my-profession">
+                        <span class="typing">Experienced Full Stack Developer</span>
+                    </h3>
+                    <p>
+                        I am a highly skilled and adaptable full-stack developer and web designer with over two years of
+                        hands-on experience in building impactful digital solutions. My expertise spans modern web
+                        technologies, graphic and UI/UX design, mobile app development, and robust software solutions.
+                        With deep proficiency in PHP, the Lumen framework, and multiple programming languages, I bring a
+                        comprehensive approach to development. I am also well-versed in Android development, delivering
+                        responsive and engaging applications tailored to client needs.
+                    </p>
+                    <a href="#contact" class="btn hire-me">Get in Touch</a>
+
+
                 </div>
-                <div class="home-img padd-15">
-                    <img src="../res/img/dashboardLogo.png">
+                <div class="home-img col-md-8 padd-15">
+                    <!-- <img src="../res/img/DashboardNewImage-transparent.png"> -->
                 </div>
             </div>
         </div>
     </section>
     <!-- home section end -->
 
-    <section class="section AI-section" id="AISection">
-        <div class="container">
+    <section class="section AI-section" id="AISection" style="min-height: auto !important;padding: 90px 0px;">
+        <div class="container-fluid padd-15">
             <div class="row">
-                <div class="section-title padd-15">
+                <div class="section-title padd-15 px-5">
                     <h2>Medical Recommendation System</h2>
                 </div>
-                <div class="card">
-                    <div class="row">
+                <div class="px-5 card-box-AI"  data-bs-theme="dark">
+                    <div class="row" style="margin: 0px;padding: 0px;">
                         <div class="col-lg-4 col-sm-12 col-md-4 p-2">
                             <a data-bs-toggle="offcanvas" id="idDisesePredectionSystem" href="#idDPS" role="button"
                                 aria-controls="idDPS">
-                                <div class="card p-3">
-                                    <h4 class="text-center">Disease Prediction System</h4>
-                                    <div class="card-body">
+                                <div class="card shadow-lg  p-3">
+                                    <h4 class="text-center c-text-vl">Disease Prediction System</h4>
+                                    <div class="card-body ">
                                         <div class="home-img-box padd-15">
                                             <img src="../res/img/DPS-img.jpg" style="width: 15rem; height:15rem;">
+                                            <!-- <i class="fa-solid fa-hand-holding-medical" style="font-size: 5rem; color:var(--skin-color);"></i> -->
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="col-lg-4 col-sm-12 col-md-4 p-2">
-                            <a href='BlogPage.php?iActive=4&id=${ele.id}'>
-                                <div class="card p-3">
-                                    <h4 class="text-center">Hypertension Prediction System</h4>
+                            <a href='#'>
+                                <div class="card shadow-lg  p-3">
+                                    <h4 class="text-center c-text-vl">Hypertension Prediction System</h4>
                                     <div class="card-body">
                                         <div class="home-img-box padd-15">
                                             <img src="../res/img/hypertension-img.jpg"
@@ -73,9 +82,9 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
                             </a>
                         </div>
                         <div class="col-lg-4 col-sm-12 col-md-4 p-2">
-                            <a href='BlogPage.php?iActive=4&id=${ele.id}'>
-                                <div class="card p-3">
-                                    <h4 class="text-center">Diabetes Prediction System</h4>
+                            <a href='#'>
+                                <div class="card shadow-lg  p-3">
+                                    <h4 class="text-center c-text-vl">Diabetes Prediction System</h4>
                                     <div class="card-body">
                                         <div class="home-img-box padd-15">
                                             <img src="../res/img/Daibetes-system-img.jpg"
@@ -94,14 +103,14 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 
     <!-- Blog section start -->
     <section class="section blog-section" id="BlogSectionId">
-        <div class="container">
+        <div class="container-fluid padd-15 px-5">
             <div class="row">
                 <div class="section-title padd-15">
                     <h2>Blog</h2>
                 </div>
             </div>
-            <div class="card">
-                <div class="row p-5" id="blogBoxId">
+            <div class="blog-box-animation" data-bs-theme="dark">
+                <div class="row" id="blogBoxId">
                 </div>
             </div>
         </div>
@@ -109,22 +118,218 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
     <!-- Blog section end -->
 
 
+    <!-- About section start -->
+    <section class="about section pt-5 pb-5" id="about">
+        <!-- <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb pt-4">
+                <li class="breadcrumb-item"><a href="MyPortfolio.php"> Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">About</li>
+            </ol>
+        </nav> -->
+
+        <div class="container-fluid">
+            <div class="row px-5 p-lg-5 p-md-5 p-sm-3">
+                <div class="section-title padd-15 mt-5">
+                    <h2>About me</h2>
+                </div>
+            </div>
+            <div class="about-content padd-15 px-5" data-bs-theme="dark">
+                <div class="row">
+                    <div class="about-text">
+                        <h3>My name is Suraj Jaiswal and I am a <span>Full Stack Developer</span></h3>
+                        <p>I am a versatile web designer and full-stack developer with over a year of extensive
+                            experience. My expertise encompasses website design, graphic design, and much more.
+                            Additionally, I possess strong knowledge in web technologies, mobile app development, and
+                            software development, backed by 2 years of hands-on experience in PHP. </p>
+                        <p>I am passionate about creating visually stunning and highly functional digital experiences
+                            tailored to meet the unique needs of each client. Whether you are looking to revamp your
+                            existing website, develop a new mobile application, or require comprehensive software
+                            solutions, I am here to help bring your vision to life.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="personal-info padd-15">
+                        <div class="row">
+                            <div class="info-item padd-15">
+                                <p>Birthday: <span>14 april 2003</span></p>
+                            </div>
+
+                            <div class="info-item padd-15">
+                                <p>Age: <span>21</span></p>
+                            </div>
+
+                            <div class="info-item padd-15">
+                                <p>Website: <span>www.samrtpolys.com</span></p>
+                            </div>
+
+                            <div class="info-item padd-15">
+                                <p>Email: <span>Jaiswaljesus384@gmail.com</span></p>
+                            </div>
+
+                            <div class="info-item padd-15">
+                                <p>Diploma: <span>Computer Science & Engineering</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>Phone: <span>+91 738-799-7294</span></p>
+                            </div>
+
+                            <div class="info-item padd-15">
+                                <p>City: <span>Pune, maharashtra</span></p>
+                            </div>
+
+
+                        </div>
+
+                        <div class="row">
+                            <div class="buttons padd-15">
+                                <a href="https://internshala.com/download/resume" target="_blank" class="btn">Download CV</a>
+                                <a href="MyPortfolio.php#contact" class="btn">Contact Me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills padd-15">
+                        <div class="row">
+                            <div class="skill-item padd-15">
+                                <h5>Web Development</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 90%;"></div>
+                                    <div class="skill-percent">90%</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item padd-15">
+                                <h5>Mobile App Development</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 50%;"></div>
+                                    <div class="skill-percent">50%</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item padd-15">
+                                <h5>Data Visualization</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 50%;"></div>
+                                    <div class="skill-percent">50%</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item padd-15">
+                                <h5>Rest API Development</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 80%;"></div>
+                                    <div class="skill-percent">80%</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item padd-15">
+                                <h5>Page Design</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 76%;"></div>
+                                    <div class="skill-percent">76%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="education padd-15">
+                        <h3 class="title">Education</h3>
+                        <div class="row">
+                            <div class="timline-box padd-15">
+                                <div class="timeline shadow-dark">
+                                    <!-- Timeline item -->
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date">
+                                            <i class="fa fa-calendar"></i> 2023 - 2027
+                                        </h3>
+                                        <h4 class="timeline-title">
+                                            Zeal College of Engineering & Research, Pune
+                                        </h4>
+                                        <p class="timeline-text">
+                                            Bachelor of Engineering - BE, Artificial Intelligence and data science.
+                                        </p>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date">
+                                            <i class="fa fa-calendar"></i> 2019 - 2022
+                                        </h3>
+                                        <h4 class="timeline-title">
+                                            Diploma in computer science
+                                        </h4>
+                                        <p class="timeline-text">
+                                            Maharashtra State Board of Technical Education (MSBTE)
+                                            Diploma of Education, Computer science
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience padd-15">
+                        <h3 class="title">
+                            Experience
+                        </h3>
+
+                        <div class="row">
+                            <div class="timline-box padd-15">
+                                <div class="timeline shadow-dark">
+                                    <!-- Timeline item -->
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date">
+                                            <i class="fa fa-calendar"></i> November 2022 - Present
+                                        </h3>
+                                        <h4 class="timeline-title">
+                                            Plus91 Technologies Pvt. Ltd.
+                                        </h4>
+                                        <p class="timeline-text">
+                                            PHP Developer.
+                                        </p>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date">
+                                            <i class="fa fa-calendar"></i> August 2022 - November 2022
+                                        </h3>
+                                        <h4 class="timeline-title">
+                                            Hashtag Systems Inc
+                                        </h4>
+                                        <p class="timeline-text">
+                                            Intern
+                                            August 2022 - November 2022 (4 months)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section end -->
+
 
 
 
     <!-- FAQ section Start -->
 
-    <section class="faq section " id="faq">
-        <div class="container">
+    <section class="faq section pt-5" id="faq">
+        <div class="container-fluid padd-15 px-5">
             <div class="row">
                 <div class="section-title padd-15">
                     <h2>FAQ</h2>
                 </div>
             </div>
 
-            <div class="faq_box ">
+            <div class="faq_box" data-bs-theme="dark">
                 <div class="row">
-                    <div class="faq_img padd-15">
+                    <div class="faq_img padd-15 px-5">
                         <img src="../res/img/faq_1.png" alt="">
                         <div class="faq_img__inner">
                             <img src="../res/img/faq_2.png">
@@ -204,7 +409,7 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 
     <!-- Contact section start -->
     <section class="contact section  " id="contact">
-        <div class="container">
+        <div class="container-fluid padd-15 px-5">
             <div class="row">
                 <div class="section-title padd-15">
                     <h2>Contact Me</h2>
@@ -212,7 +417,7 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
             </div>
             <h3 class="contact-title padd-15">Have you any Question ?</h3>
             <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICE</h4>
-            <div class="row">
+            <div class="row contact-animation">
                 <!-- contact info item start -->
                 <div class="contact-info-item padd-15">
                     <div class="icon"><i class="fa fa-phone"></i></div>
@@ -249,7 +454,7 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
             <h4 class="contact-sub-title padd-15">I'M VERY RESPOSIVE TO MESSAGES</h4>
 
             <!-- CONTACT FORM -->
-            <div class="row">
+            <div class="row" data-bs-theme="dark">
                 <div class="contact-form padd-15">
                     <div class="row">
                         <div class="form-item col-6 padd-15">
@@ -395,14 +600,14 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 
 <!-- manu toggler start -->
 
-<div class="toggler-box">
+<!-- <div class="toggler-box">
     <div class="toggler-open icon">
         <i class="uil uil-angle-right-b"></i>
     </div>
     <div class="toggler-close icon">
         <i class="uil uil-angle-left-b"></i>
     </div>
-</div>
+</div> -->
 
 <!-- manu toggler end -->
 
@@ -433,9 +638,9 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 
                         sTemplate += `
                         <div class="col-lg-6 col-sm-12 col-md-6 p-2">
-                            <a href = 'BlogPage.php?iActive=4&id=${ele.id}'><div class="card p-3">
-                                <h3>${ele.title}</h3>
-                                <div class="card-body">
+                            <a href = 'BlogPage.php?iActive=4&id=${ele.id}'><div class="card p-3 shadow-lg">
+                                <h3 class="c-text-vl">${ele.title}</h3>
+                                <div  class="c-text-vl" class="card-body">
                                     <p class="card-text">${limitedBlogData}</p>
                                 </div>
                             </div></a>
@@ -507,7 +712,7 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
         theme: "default"
     });
 
-   
+
 
 
     $('#idDisesePredectionSystem').on('click', () => {

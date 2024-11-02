@@ -2,7 +2,7 @@
 // include header section of template
 require_once "../config.php";
 include_once ABS_PATH_TO_PROJECT . "view/CDN_Header.php";
-include_once ABS_PATH_TO_PROJECT . "view/leftBar.php";
+include_once ABS_PATH_TO_PROJECT . "view/NavBar.php";
 include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 
 ?>
@@ -13,20 +13,20 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 
     <!-- About section start -->
     <section class="about section " id="about">
-        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <!-- <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb pt-4">
                 <li class="breadcrumb-item"><a href="MyPortfolio.php"> Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">About</li>
             </ol>
-        </nav>
+        </nav> -->
 
-        <div class="container">
-            <div class="row">
-                <div class="section-title padd-15">
+        <div class="container-fluid">
+            <div class="row px-5 p-lg-5 p-md-5 p-sm-3">
+                <div class="section-title padd-15 mt-5">
                     <h2>About me</h2>
                 </div>
             </div>
-            <div class="about-content padd-15">
+            <div class="about-content padd-15 px-5" data-bs-theme="dark">
                 <div class="row">
                     <div class="about-text">
                         <h3>My name is Suraj Jaiswal and I am a <span>Full Stack Developer</span></h3>
@@ -231,14 +231,14 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 
 <!-- manu toggler start -->
 
-<div class="toggler-box">
+<!-- <div class="toggler-box">
     <div class="toggler-open icon">
         <i class="uil uil-angle-right-b"></i>
     </div>
     <div class="toggler-close icon">
         <i class="uil uil-angle-left-b"></i>
     </div>
-</div>
+</div> -->
 
 <!-- manu toggler end -->
 

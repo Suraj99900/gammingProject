@@ -2,7 +2,7 @@
 // include header section of template
 require_once "../config.php";
 include_once ABS_PATH_TO_PROJECT . "view/CDN_Header.php";
-include_once ABS_PATH_TO_PROJECT . "view/leftBar.php";
+include_once ABS_PATH_TO_PROJECT . "view/NavBar.php";
 include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 include_once '../classes/class.Input.php';
 
@@ -25,22 +25,22 @@ $iId = input::request('id')?input::request('id'):'';
 
     <!-- About section start -->
     <section class="about section " id="about">
-        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <!-- <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb pt-4">
                 <li class="breadcrumb-item"><a href="MyPortfolio.php">Home</a></li>
                 <li class="breadcrumb-item"><a href="renderBlog.php">Blog</a></li>
                 <li class="breadcrumb-item active" id="blogTitleId" aria-current="page"></li>
             </ol>
-        </nav>
+        </nav> -->
 
-        <div class="container">
-            <div class="row">
-                <div class="section-title padd-15" >
-                    <h2 id="BlogHeadingTitleId"></h2>
+        <div class="container-fluid padd-15" data-bs-theme="dark">
+            <div class="row px-5">
+                <div class="section-title padd-15 mt-5" >
+                    <h2 class="c-text"  id="BlogHeadingTitleId"></h2>
                 </div>
             </div>
-            <div class="about-content padd-15" id="idContentId">
-               <div class="content_data" id="blogContentId">
+            <div class="about-content padd-15 px-5" id="idContentId">
+               <div class="content_data c-text" id="blogContentId">
 
                </div>
             </div>

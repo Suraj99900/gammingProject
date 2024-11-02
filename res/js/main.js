@@ -3,26 +3,66 @@ var API_URL = "'http://localhost/project/Game-Collection-App";
 
 // =============== types
 const typed = document.querySelector(".typing");
-const string_data = ["Welcome to smartpoly", "Explore smartpoly", "Discover a world of smartpoly"];
+const string_data = ["Welcome to smartplace", "Explore smartplace", "Discover a world of smartplace"];
 let ixd = 1;
 let i = 0;
 
 function typeing() {
-    typed.innerText = string_data[i].slice(0, ixd);
-    ixd++;
 
-    if (ixd > string_data[i].length) {
-        setTimeout(() => {
-            i++;
-            ixd = 1;
-            if (i >= string_data.length) {
-                i = 0;
-            }
-        }, 1000); // Delay between messages (1 second in this example)
+    if (typed != null) {
+        typed.innerText = string_data[i].slice(0, ixd);
+        ixd++;
+
+        if (ixd > string_data[i].length) {
+            setTimeout(() => {
+                i++;
+                ixd = 1;
+                if (i >= string_data.length) {
+                    i = 0;
+                }
+            }, 1000); // Delay between messages (1 second in this example)
+        }
     }
+
 }
 
 setInterval(typeing, 150)
+
+$(document).ready(() => {
+    $('.home-info h3, .home-info p, .btn,.card-box-AI, .login-form, .skills').css({ transform: 'translateY(20px)', opacity: 0 }) // Start from below and hidden
+        .addClass('fade-in')
+        .animate({ transform: 'translateY(0)', opacity: 1 }, 5000);
+})
+
+
+// On scroll, check each element to see if it's in the viewport
+$(window).on('scroll', function () {
+    $('.home-info h3, .home-info p, .btn,.card-box-AI,.contact-animation,.faq_box,.blog-box-animation').each(function () {
+        if ($(this).isInViewport()) {
+            if (!$(this).hasClass('fade-in')) {
+                $(this).css({ transform: 'translateY(20px)', opacity: 0 }) // Start from below and hidden
+                    .addClass('fade-in')
+                    .animate({ transform: 'translateY(0)', opacity: 1 }, 2000); // Animate up to visible position
+            }
+        } else {
+            if ($(this).hasClass('fade-in')) {
+                $(this).removeClass('fade-in')
+                    .css({ transform: 'translateY(20px)', opacity: 0 }); // Reset position when out of view
+            }
+        }
+    });
+});
+
+// Custom jQuery function to check if element is in viewport
+$.fn.isInViewport = function () {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+
 
 
 
@@ -31,24 +71,24 @@ setInterval(typeing, 150)
 
 // ======================= nav item active
 
-let nav = document.querySelector(".nav");
-navlist = nav.querySelectorAll("li");
-size_nav = navlist.length;
-for (let i = 0; i < size_nav; i++) {
-    const a = navlist[i].querySelector("a");
-    a.addEventListener("click", function () {
-        for (let j = 0; j < size_nav; j++) {
-            navlist[j].querySelector("a").classList.remove("active");
-        }
-        this.classList.add("active");
-        if (window.innerWidth <= 1199) {
-            nav_box.style.left = -270 + "px";
-            close.style.visibility = "hidden";
-            open.style.visibility = "visible";
-        }
+// let nav = document.querySelector(".nav");
+// navlist = nav.querySelectorAll("li");
+// size_nav = navlist.length;
+// for (let i = 0; i < size_nav; i++) {
+//     const a = navlist[i].querySelector("a");
+//     a.addEventListener("click", function () {
+//         for (let j = 0; j < size_nav; j++) {
+//             navlist[j].querySelector("a").classList.remove("active");
+//         }
+//         this.classList.add("active");
+//         if (window.innerWidth <= 1199) {
+//             nav_box.style.left = -270 + "px";
+//             close.style.visibility = "hidden";
+//             open.style.visibility = "visible";
+//         }
 
-    })
-}
+//     })
+// }
 
 
 
@@ -71,8 +111,8 @@ function close_nav() {
     open.style.visibility = "visible";
 }
 
-open.addEventListener("click", open_nav);
-close.addEventListener("click", close_nav);
+// open.addEventListener("click", open_nav);
+// close.addEventListener("click", close_nav);
 
 
 // =================== slider images
@@ -242,14 +282,14 @@ const hideSidebarBtn = document.querySelector('#hide__sidebar-btn');
 
 
 // show side bar on small devices
-const showSidebar = () =>{
+const showSidebar = () => {
     sidebar.style.left = '0';
     showSidebarBtn.style.display = 'none';
     hideSidebarBtn.style.display = 'inline-block';
 }
 
 // hide side bar on small devices
-const hideSidebar = () =>{
+const hideSidebar = () => {
     sidebar.style.left = '-100%';
     hideSidebarBtn.style.display = 'none';
     showSidebarBtn.style.display = 'inline-block';
@@ -261,7 +301,7 @@ hideSidebarBtn.addEventListener('click',hideSidebar);
 
 // alert response popbox
 
-function responsePop(title = '',message = '',icon = '',confirmButtonText = ''){
+function responsePop(title = '', message = '', icon = '', confirmButtonText = '') {
     Swal.fire({
         title: title,
         text: message,

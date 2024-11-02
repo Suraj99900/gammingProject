@@ -1,7 +1,7 @@
 <?php
 // include header section of template
 include_once "./CDN_Header.php";
-include_once "./leftBar.php";
+include_once "./NavBar.php";
 include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 include_once "../classes/class.Input.php";
 
@@ -39,37 +39,36 @@ $blogId = Input::request("blogId") ? Input::request("blogId") : "";
 </script>
 
 <!-- main Content start -->
-<div class="main-content">
+<div class="main-content" data-bs-theme="dark">
 
     <!-- home section start -->
-    <section class="Student-Info section " id="ManageBlogId">
-        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <section class="upload section" id="ManageBlogId">
+        <!-- <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb pt-4">
                 <li class="breadcrumb-item"><a href="Dashboard.php"> Dashboard</a></li>
                 <li class="breadcrumb-item"><a href="BlogManage.php?iActive=4&staffAccess=1">Manage Blog</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Update Blog</li>
             </ol>
-        </nav>
-        <div class="container">
+        </nav> -->
+        <div class="container-fluid padd-15">
 
             <!-- upload Section form  start-->
-            <div class="row">
-                <div class="section-title padd-15">
+            <div class="row px-5">
+                <div class="section-title padd-15 mt-5">
                     <h2> Update Blog</h2>
                 </div>
             </div>
-            <div class="upload-btn-section shadow-lg p-lg-5 p-sm-5 p-md-5 mb-5 bg-body rounded flex"
+            <div class="upload-btn-section shadow-lg p-lg-5 p-sm-5 p-md-5 mb-2 mx-5 bg-body rounded flex"
                 style="position: relative;">
                 <form>
+                    <a id="idUpdateBlogSubmit" class="btnWAN search float-end mb-4">Update</a>
                     <div class="form-group my-2">
                         <label for="BlogTitleId" class="p-1">Blog Title</label>
                         <input type="text" id="BlogTitleId" class="form-control" placeholder="Enter blog title">
                     </div>
 
                     <textarea id="BlogTextAreaId"></textarea>
-                    <div class="flex search-btn mt-5">
-                        <a id="idUpdateBlogSubmit" class="btn search  mb-4">Update</a>
-                    </div>
+
                 </form>
             </div>
 
@@ -105,7 +104,7 @@ $blogId = Input::request("blogId") ? Input::request("blogId") : "";
 <!-- style switcher end -->
 
 <!-- manu toggler start -->
-
+<!-- 
 <div class="toggler-box">
     <div class="toggler-open icon">
         <i class="uil uil-angle-right-b"></i>
@@ -113,7 +112,7 @@ $blogId = Input::request("blogId") ? Input::request("blogId") : "";
     <div class="toggler-close icon">
         <i class="uil uil-angle-left-b"></i>
     </div>
-</div>
+</div> -->
 
 <!-- manu toggler end -->
 

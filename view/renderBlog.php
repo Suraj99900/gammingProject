@@ -2,7 +2,7 @@
 // include header section of template
 require_once "../config.php";
 include_once ABS_PATH_TO_PROJECT . "view/CDN_Header.php";
-include_once ABS_PATH_TO_PROJECT . "view/leftBar.php";
+include_once ABS_PATH_TO_PROJECT . "view/NavBar.php";
 include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 
 ?>
@@ -18,14 +18,14 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 
     <!-- Blog section start -->
     <section class="section blog-section" id="BlogSectionId">
-        <div class="container">
-            <div class="row">
-                <div class="section-title padd-15">
+        <div class="container-fluid">
+            <div class="row px-5 p-lg-5 p-md-5 p-sm-3">
+                <div class="section-title padd-15 mt-5">
                     <h2>Blog</h2>
                 </div>
             </div>
-            <div class="card">
-                <div class="row p-5" id="blogBoxId">
+            <div class="" data-bs-theme="dark">
+                <div class="row mx-5 p-2" id="blogBoxId">
                 </div>
             </div>
         </div>
@@ -91,14 +91,14 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 
 <!-- manu toggler start -->
 
-<div class="toggler-box">
+<!-- <div class="toggler-box">
     <div class="toggler-open icon">
         <i class="uil uil-angle-right-b"></i>
     </div>
     <div class="toggler-close icon">
         <i class="uil uil-angle-left-b"></i>
     </div>
-</div>
+</div> -->
 
 <!-- manu toggler end -->
 
@@ -129,10 +129,10 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 
                         sTemplate += `
                         <div class="col-lg-6 col-sm-12 col-md-6 p-2">
-                            <a href = 'BlogPage.php?iActive=2&id=${ele.id}'><div class="card p-3">
-                                <h3>${ele.title}</h3>
-                                <div class="card-body">
-                                    <p class="card-text">${limitedBlogData}</p>
+                            <a href = 'BlogPage.php?iActive=4&id=${ele.id}'><div class="card p-3 shadow-lg" data-bs-theme="dark">
+                                <h3 class="c-text" >${ele.title}</h3>
+                                <div class="card-body c-text">
+                                    <p class="card-text c-text">${limitedBlogData}</p>
                                 </div>
                             </div></a>
                         </div>`;

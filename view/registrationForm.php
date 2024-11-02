@@ -1,7 +1,7 @@
 <?php
 // include header section of template
 include_once "./CDN_Header.php";
-include_once "./leftBar.php";
+include_once "./NavBar.php";
 
 $sReferCode = input::request('code') && input::request('code') != "" ? input::request('code'): "";
 ?>
@@ -12,21 +12,21 @@ $sReferCode = input::request('code') && input::request('code') != "" ? input::re
     <!-- home section start -->
     <section class="upload section " id="upload">
 
-        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <!-- <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb pt-4">
                 <li class="breadcrumb-item"><a href="Dashboard.php"> Dashboard</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Registration</li>
             </ol>
-        </nav>
-        <div class="container">
+        </nav> -->
+        <div class="container-fluid padd-15">
 
             <!-- upload Section form  start-->
-            <div class="row">
-                <div class="section-title padd-15">
+            <div class="row px-5 p-lg-5 p-md-5 p-sm-3">
+                <div class="section-title padd-15 mt-5">
                     <h2>Registration</h2>
                 </div>
             </div>
-            <div class="upload-btn-section shadow-lg p-lg-5 p-sm-5 p-md-5 mb-5  rounded flex" style="position: relative;">
+            <div class="container upload-btn-section shadow-lg p-lg-5 p-sm-5 p-md-5 mb-5  rounded flex" style="position: relative;" >
                 <form>
                     <div class="row align-items-center p-3">
                         <div class="col-sm-12 col-md-12 col-lg-12">
@@ -48,7 +48,7 @@ $sReferCode = input::request('code') && input::request('code') != "" ? input::re
                     </div>
 
                     <div class="flex search-btn mt-5">
-                        <a id="idRegister" class="btn mb-4">Submit</a>
+                        <a id="idRegister" class="btnWAN mb-4">Submit</a>
                     </div>
                 </form>
             </div>
@@ -86,14 +86,14 @@ $sReferCode = input::request('code') && input::request('code') != "" ? input::re
 
 <!-- manu toggler start -->
 
-<div class="toggler-box">
+<!-- <div class="toggler-box">
     <div class="toggler-open icon">
         <i class="uil uil-angle-right-b"></i>
     </div>
     <div class="toggler-close icon">
         <i class="uil uil-angle-left-b"></i>
     </div>
-</div>
+</div> -->
 
 <!-- manu toggler end -->
 

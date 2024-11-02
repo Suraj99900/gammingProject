@@ -50,6 +50,10 @@ a {
     color: var(--text-black-700);
 }
 
+.navbar-toggler{
+    background: white;
+}
+
 .editor-container {
     width: 100%;
     /* margin: 20px auto; */
@@ -155,7 +159,7 @@ p{
     background: var(--bg-black-900);
     min-height: 100vh;
     display: block;
-    padding: 0 30px;
+    /* padding: 0 30px; */
     opacity: 1;
 }
 
@@ -164,7 +168,7 @@ p{
 }
 
 .main-content {
-    padding-left: 270px;
+    /* padding-left: 270px; */
 }
 
 .remove-main-content {
@@ -183,8 +187,8 @@ p{
 }
 
 .section .container {
-    padding-top: 60px;
-    padding-bottom: 70px;
+    /* padding-top: 60px;
+    padding-bottom: 70px; */
 }
 
 .section-title {
@@ -271,6 +275,19 @@ p{
     font-size: 0.8rem;
     font-weight: 500;
     padding: 7px 25px;
+    color: white;
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    transition: all 0.3 ease;
+    background: var(--skin-color);
+}
+
+.btnWAN {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 5px 25px !important;
     color: white;
     border-radius: 40px;
     display: inline-block;
@@ -489,21 +506,24 @@ p{
     min-height: 100vh;
     display: flex;
     color: var(--text-black-900);
+    flex-direction: column;
+    justify-content: center;
 }
 
 .home .home-info {
-    flex: 0 0 50%;
-    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 h3.hello {
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 15px 0;
 }
 
 h3.hello span {
     font-family: 'Clicker Script', cursive;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
     color: var(--skin-color);
 }
@@ -525,11 +545,24 @@ h3.my-profession {
 
 
 .home .home-img {
-    flex: 0 0 50%;
-    max-width: 50%;
-    position: relative;
-    text-align: center;
+    background: url(../img/DashboardNewImage-transparent.png) no-repeat center center;
+    backface-visibility: visible;
+    background-origin: content-box;
+    backdrop-filter: blur(1px);
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 40vw;
+    transform: translateY(50px);
+    opacity: 1;
+    animation: zoomPan 10s infinite alternate ease-in-out; /* Infinite animation with smooth transitions */
 }
+
+.login-form{
+    transform: translateY(100px);
+    opacity: 0;
+    animation: zoomPan 3s alternate ease-in;
+}
+
 .home-img-box {
     flex: 0 0 100%;
     max-width: 100%;
@@ -1800,6 +1833,16 @@ td a i {
         font-size: 52%;
     }
 
+    .navbar-toggler{
+        top: -20px !important;
+        left: 40% !important;
+    }
+
+    .btnWAN {
+        width: 10vw;
+        margin: 5px 0px;
+    }
+
     .section {
         padding: 0 5px;
     }
@@ -1857,6 +1900,29 @@ td a i {
     html{
         font-size: 42%;
     }
+    .home {
+        background: 
+            linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+            url(../img/DashboardNewImage-transparent.png) no-repeat center center;
+        backface-visibility: visible;
+        background-origin: content-box;
+        backdrop-filter: blur(1px);
+        background-size: cover;
+        background-blend-mode: darken;
+        background-attachment: fixed;
+    }
+
+    .navbar-toggler{
+        top: -42px !important;
+        left: 88% !important;
+    }
+
+    
+    .btnWAN {
+        width: 20vw;
+        margin: 5px 0px;
+    }
+    
     .userInfo{
         padding: 0;
     }
@@ -1920,7 +1986,7 @@ td a i {
     }
 
     .about-content, img{
-        width: 100vw;
+        width: 80vw;
     }
 
     .faq .faq_box .faq_img img {
@@ -2168,4 +2234,52 @@ td a i {
 
 .login-form{
     padding: 0 1rem;
+}
+
+
+
+
+/* Animation */
+
+/* Smooth hover effect on button */
+.btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(500px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for zooming and panning effect */
+@keyframes zoomPan {
+    0% {
+        transform: translateY(100);
+        opacity: 0;
+    }
+    30% {
+        transform: translateY(70);
+        opacity: 0.2;
+    }
+    60% {
+        transform: translateY(30);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

@@ -73,7 +73,11 @@ if ($sFlag == "login") {
 
     $userManage = new UserManage();
     $oResult = $userManage->login($name, $password);
-    echo json_encode(array($oResult, "status" => 200));
+    if($oResult != false){
+        echo json_encode(array($oResult, "status" => 200));
+    }else{
+        echo json_encode(array($oResult, "status" => 500,'message'=>"Wrong username and password."));
+    }
 }
 
 if($sFlag == 'userSymptoms'){

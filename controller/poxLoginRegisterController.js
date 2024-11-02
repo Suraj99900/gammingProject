@@ -85,7 +85,9 @@ function login() {
                             }
                         });
                     } else {
-                        responsePop('Error', aData.message, 'error', 'ok');
+                        console.log(data);
+                        
+                        responsePop('Error', data.message, 'error', 'ok');
                     }
                 } catch (error) {
                     console.log(error);

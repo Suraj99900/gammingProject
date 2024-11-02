@@ -26,8 +26,8 @@ define('EVENT_HOUR',11);
 define('EVENT_MINUTE',59);
 
 // Project Name Configuration
-define("FIRST_NAME","S");
-define("OTHER_NAME","uraj");
+define("FIRST_NAME","Smart");
+define("OTHER_NAME","Place");
 
 // PortFolio
 define('MYPORTFOLIO_INDEX_LOCATION','http://localhost/project/Game-Collection-App/view/MyPortfolio.php');

@@ -26,6 +26,9 @@ function setActivityStyle(color) {
 }
 
 // ================= theme light and dark mode
+$(document).ready(()=>{
+    document.body.classList.toggle("dark");
+});
 
 const dayNight = document.querySelector(".day-night");
 
