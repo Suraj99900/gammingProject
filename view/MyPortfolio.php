@@ -11,6 +11,19 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
         width: 100%;
         height: 30vh;
     }
+
+    /* Target select2 container */
+    .select2-selection .select2-selection--multiple,
+    .select2-selection__choice {
+        color: #343a40 !important;
+        /* Light text color */
+    }
+
+    /* Target dropdown options */
+    .select2-results__option {
+        color: #343a40 !important;
+        /* Light text color */
+    }
 </style>
 
 <!-- main Content start -->
@@ -52,7 +65,7 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
                 <div class="section-title padd-15 px-5">
                     <h2>Medical Recommendation System</h2>
                 </div>
-                <div class="px-5 card-box-AI"  data-bs-theme="dark">
+                <div class="px-5 card-box-AI" data-bs-theme="dark">
                     <div class="row" style="margin: 0px;padding: 0px;">
                         <div class="col-lg-4 col-sm-12 col-md-4 p-2">
                             <a data-bs-toggle="offcanvas" id="idDisesePredectionSystem" href="#idDPS" role="button"
@@ -182,7 +195,8 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 
                         <div class="row">
                             <div class="buttons padd-15">
-                                <a href="https://internshala.com/download/resume" target="_blank" class="btn">Download CV</a>
+                                <a href="https://internshala.com/download/resume" target="_blank" class="btn">Download
+                                    CV</a>
                                 <a href="MyPortfolio.php#contact" class="btn">Contact Me</a>
                             </div>
                         </div>
@@ -526,7 +540,8 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
     </div>
 </div>
 
-<div class="offcanvas offcanvas-end bg-card-low" tabindex="-1" id="ChatbotoffCanvas" aria-labelledby="ChatbotoffCanvas">
+<div class="offcanvas offcanvas-end bg-card-low" tabindex="-1" id="ChatbotoffCanvas" aria-labelledby="ChatbotoffCanvas"
+    data-bs-theme="dark">
     <div class="offcanvas-header card-title-change">
         <h5 id="offcanvasTopLabel card-title-change">Hi My Name is Selly</h5>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -554,22 +569,23 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 </div>
 
 <div class="offcanvas offcanvas-end bg-card-high" tabindex="-1" id="idDPS" aria-labelledby="offcanvasRightLabel"
-    style="width: 60%;">
+    style="width: 60%;" data-bs-theme="dark">
     <div class="offcanvas-header">
         <h3 class="offcanvas-title c-text" id="offcanvasAddStaffLabel">Disease Prediction System</h3>
         <i data-bs-dismiss="offcanvas" aria-label="Close"
             class="c-text btn-close text-reset btn c-text fa-solid fa-circle-xmark" style="font-size: 1.5rem;"></i>
     </div>
-    <div class="offcanvas-body bg-card-high" style="height: 100vh;">
+    <div class="offcanvas-body bg-card-high " data-bs-theme="dark" style="height: 100vh;">
         <div class="upload-btn-section shadow-sm p-lg-5 p-sm-5 p-md-5 mb-5  rounded flex">
             <form>
 
-                <div class="row align-items-center p-3">
+                <div class="row align-items-center shadow-lg p-3" data-bs-theme="dark">
                     <div class="col-sm-12 col-md-12 col-lg-12">
                         <label for="StaffPassword" class="form-label card-title-change"
                             style="color: var(--skin-color);font-size: 1.5rem;"><i
                                 class="fa-solid fa-heart-circle-bolt"></i> Select Symptoms</label>
-                        <select multiple class="form-select custom-control c-text-vl" id="idSymptoms" name="type">
+                        <select multiple class="form-select custom-control c-text" data-bs-theme="dark" id="idSymptoms"
+                            name="type">
                         </select>
                     </div>
                 </div>
@@ -659,6 +675,7 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
     }
 
     $("#idSymptoms").select2({
+        theme: 'bootstrap',
         ajax: {
             url: "../ajaxFile/ajaxUserManage.php",
             dataType: 'json',
