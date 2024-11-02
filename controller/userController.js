@@ -5,7 +5,7 @@ function fetchUserPersonalDetails() {
 
     // Make the Ajax request
     $.ajax({
-        url: "../ajaxFile/ajaxuserManage.php?sFlag=fetchById&id="+iUserID,
+        url: "../ajaxFile/ajaxUserManage.php?sFlag=fetchById&id="+iUserID,
         method: "GET",
         dataType: "json",
         success: function (data) {
