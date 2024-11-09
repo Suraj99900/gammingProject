@@ -7,6 +7,12 @@
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
 
+    --new-bg-dark-blue:#0f2c41;
+    --new-bg-dark-card:#183652;
+    --new-gradiant-card-color1:#315dff;
+    --new-gradiant-card-color2:#7c53ff;
+    --new-white-text-color:#ebeeef;
+
     --first-color: #ffcbcb;
     --second-color: #ffb5b5;
     --third-color: #407088;
@@ -19,6 +25,12 @@ body.dark {
     --bg-black-50: #393939;
     --text-black-900: #ffffff;
     --text-black-700: #e9e9e9;
+
+    /* --bg-black-900: #0f2c41;
+    --bg-black-50: #183652;
+    --bg-black-100: #183652d0;
+    --text-black-900: #ffffff;
+    --text-black-700: #e9e9e9; */
 }
 
 body {
@@ -26,7 +38,7 @@ body {
     padding: 0;
     line-height: 1.5;
     font-size: 100%;
-    font-family: 'Poppins' sans-serif;
+    font-family: cursive;
 }
 
 * {
@@ -48,6 +60,7 @@ body {
 
 a {
     color: var(--text-black-700);
+    cursor: pointer;
 }
 
 .navbar-toggler{
@@ -552,7 +565,7 @@ h3.my-profession {
     background-size: cover;
     background-blend-mode: darken;
     height: 40vw;
-    transform: translateY(50px);
+    transform: scale(0.8);
     opacity: 1;
     animation: zoomPan 10s infinite alternate ease-in-out; /* Infinite animation with smooth transitions */
 }
@@ -570,27 +583,7 @@ h3.my-profession {
     text-align: center;
 }
 
-/* .home-img::after {
-    content: '';
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-bottom: 10px solid var(--skin-color);
-    border-right: 10px solid var(--skin-color);
-    right: 20px;
-    bottom: -40px;
-}
 
-.home-img::before {
-    content: '';
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-top: 10px solid var(--skin-color);
-    border-left: 10px solid var(--skin-color);
-    left: -20px;
-    top: -40px;
-} */
 
 .home .home-img img {
     width: 100%;
@@ -1005,13 +998,14 @@ form {
 
 form .custom-control {
     width: 100%;
-    height: 50px;
+    height: 33%;
     border-radius: 25px;
     /* background: var(--bg-black-100); */
     border: 1px solid var(--bg-black-50);
     padding: 10px 25px;
     font-size: 0.8rem;
-    color: var(--text-black-900);
+    /* color: var(--text-black-900); */
+    color: black;
     transition: all 0.3s ease;
     font-weight: bold;
 }
@@ -2101,7 +2095,7 @@ td a i {
 }
 
 .card-title-change {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--text-black-900);
 }
 
@@ -2267,19 +2261,15 @@ td a i {
 /* Keyframes for zooming and panning effect */
 @keyframes zoomPan {
     0% {
-        transform: translateY(100);
-        opacity: 0;
-    }
-    30% {
-        transform: translateY(70);
-        opacity: 0.2;
-    }
-    60% {
-        transform: translateY(30);
+        transform: scale(0.9);
         opacity: 0.5;
     }
     100% {
-        transform: translateY(0);
+        transform: scale(1);
         opacity: 1;
     }
+}
+
+.card-box-AI{
+    background: linear-gradient();
 }

@@ -58,12 +58,12 @@ $blogId = Input::request("blogId") ? Input::request("blogId") : "";
                     <h2> Update Blog</h2>
                 </div>
             </div>
-            <div class="upload-btn-section shadow-lg p-lg-5 p-sm-5 p-md-5 mb-2 mx-5 bg-body rounded flex"
+            <div class="upload-btn-section shadow-lg p-lg-5 p-sm-5 p-md-5 mb-2 mx-5  rounded flex"
                 style="position: relative;">
                 <form>
                     <a id="idUpdateBlogSubmit" class="btnWAN search float-end mb-4">Update</a>
                     <div class="form-group my-2">
-                        <label for="BlogTitleId" class="p-1">Blog Title</label>
+                        <label for="BlogTitleId" class="p-1 card-title-change">Blog Title</label>
                         <input type="text" id="BlogTitleId" class="form-control" placeholder="Enter blog title">
                     </div>
 

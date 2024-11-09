@@ -68,7 +68,7 @@ if (!$bIsLogin) {
 
                         <div class="row mb-5">
                             <div class="col12">
-                                <div class="card custom-table shadow-lg" data-bs-theme="dark">
+                                <div class="card custom-table p-2 shadow-lg" data-bs-theme="dark">
                                     <h4 class="text-center">Manage Blog</h4>
                                     <table id="blogManageTable" class="display" style="width: 100%;">
                                         <thead>

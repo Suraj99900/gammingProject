@@ -59,7 +59,7 @@ if (!$bIsLogin) {
                 <form>
                     <a id="idAddBlogSubmit" class="btnWAN search float-end mb-4">Submit</a>
                     <div class="form-group my-2">
-                        <label for="BlogTitleId" class="p-1 c-text">Blog Title</label>
+                        <label for="BlogTitleId" class="p-1 card-title-change">Blog Title</label>
                         <input type="text" id="BlogTitleId" class="form-control" placeholder="Enter blog title">
                     </div>
 

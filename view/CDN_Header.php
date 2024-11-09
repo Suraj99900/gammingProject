@@ -7,8 +7,8 @@
     <title>Smart Place || Showcasing Expertise and Insights</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="../res/img/PortfolioIcon-transparent.png" type="image/x-icon">
-    <link rel="shortcut icon" href="../res/img/PortfolioIcon-transparent.png" type="image/x-icon">
+    <link rel="icon" href="../res/img/DashboardNewImage-transparent.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../res/img/DashboardNewImage-transparent.png" type="image/x-icon">
 
     <!-- SEO Meta Tags -->
     <meta name="description"
@@ -31,7 +31,7 @@
     <meta name="twitter:title" content="Smart Place - Portfolio & Blog">
     <meta name="twitter:description"
         content="Explore my portfolio and read my blog for the latest tutorials and insights in [industry].">
-    <meta name="twitter:image" content="../res/img/PortfolioIcon-transparent.png">
+    <meta name="twitter:image" content="../res/img/DashboardNewImage-transparent.png">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

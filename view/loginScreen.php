@@ -45,10 +45,10 @@ include_once ABS_PATH_TO_PROJECT."view/NavBar.php";
                         </div>
                     </div>
 
-                    <div class="flex search-btn mt-5">
-                        <a id="idLogin" class="btnWAN search mb-4">Submit</a>
-                    </div>
                 </form>
+                <div class="flex search-btn mt-5" style="display: flex;justify-content: center;">
+                    <button id="idLogin" class="btnWAN search mb-4">Submit</button>
+                </div>
             </div>
 
 
