@@ -4,33 +4,33 @@
 <head>
 
     <!-- Title -->
-    <title>sexplace || Showcasing Expertise and Insights</title>
+    <title>sexplace || Your Ultimate Destination for Adult Entertainment</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="../res/img/DashboardNewImage-transparent.png" type="image/x-icon">
-    <link rel="shortcut icon" href="../res/img/DashboardNewImage-transparent.png" type="image/x-icon">
+    <link rel="icon" href="../res/img/icon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../res/img/icon.svg" type="image/x-icon">
 
     <!-- SEO Meta Tags -->
     <meta name="description"
-        content="Explore my portfolio showcasing expertise, insights, and skills in [your specialties]. Dive into my blog for valuable insights, tutorials, and industry updates.">
+        content="Explore premium adult entertainment, exclusive adult videos, and a variety of adult content tailored for your pleasure. Discover a world of erotic content on sexplace.">
     <meta name="keywords"
-        content="portfolio, blogging, personal branding, [specific skills], [industry topics],PHP,Development, career growth, insights, tutorials">
+        content="adult entertainment, adult videos, erotic content, premium adult films, adult site, mature content, NSFW, adult media, adult lifestyle, adult industry">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://smartpoly.sexplace.com">
+    <link rel="canonical" href="http://sexplace.rf.gd/">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="sexplace - Showcasing Expertise and Insights">
+    <meta property="og:title" content="sexplace - Your Ultimate Adult Entertainment Destination">
     <meta property="og:description"
-        content="A portfolio that highlights skills and insights, along with a blog featuring tutorials and industry trends.">
+        content="Explore a wide range of adult content, including exclusive videos, erotic films, and a vibrant community at sexplace. Join now for endless entertainment.">
     <meta property="og:image" content="../res/img/PortfolioIcon.png">
-    <meta property="og:url" content="https://smartpoly.sexplace.com">
+    <meta property="og:url" content="http://sexplace.rf.gd/">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="sexplace - Portfolio & Blog">
+    <meta name="twitter:title" content="sexplace - Premium Adult Entertainment">
     <meta name="twitter:description"
-        content="Explore my portfolio and read my blog for the latest tutorials and insights in [industry].">
+        content="Join sexplace to explore exclusive adult content, erotic films, and more. Discover high-quality adult entertainment for mature audiences.">
     <meta name="twitter:image" content="../res/img/DashboardNewImage-transparent.png">
 
     <meta charset="UTF-8">
