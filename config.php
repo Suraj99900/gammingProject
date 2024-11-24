@@ -26,9 +26,9 @@ define('EVENT_HOUR',11);
 define('EVENT_MINUTE',59);
 
 // Project Name Configuration
-define("FIRST_NAME","Smart");
+define("FIRST_NAME","Sex");
 define("OTHER_NAME","Place");
 
 // PortFolio
-define('MYPORTFOLIO_INDEX_LOCATION','http://localhost/project/Game-Collection-App/view/MyPortfolio.php');
-define('MYPORTFOLIO_ENABLE',true);
+define('sexplace_INDEX_LOCATION','http://localhost/project/Game-Collection-App/view/sexplace.php');
+define('sexplace_ENABLE',true);

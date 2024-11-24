@@ -11,6 +11,15 @@ $iActive = isset($_GET['iActive']) ? $_GET['iActive'] : '';
 
 <!-- main container start -->
 
+<style>
+    .navbar {
+        position: fixed;
+        z-index: 01111;
+        width: 100%;
+        box-shadow: 5px 5px 2px rgba(255, 255, 255, 0.1);
+    }
+</style>
+
 <div class="main-container">
     <nav class="navbar bg-card-high navbar-expand-lg navbar-light">
         <div class="container-fluid bg-card-high" style="display: block;">
@@ -31,50 +40,46 @@ $iActive = isset($_GET['iActive']) ? $_GET['iActive'] : '';
                     style="position: relative;width: 10%;top: -42px;left: 88%;">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="col-md-6">
+                <div class="col-md-3">
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item mx-3">
-                                <a href="MyPortfolio.php"
-                                    class="<?php echo ($iActive == "" ? "active" : "") ?> nav-link"><i
-                                        class="fa fa-home mx-2 "></i>Home</a>
+                                <a href="sexplace.php" target="_blank"
+                                    class="<?php echo ($iActive == "" ? "active" : "") ?> nav-link">Home</a>
                             </li>
                             <li class="nav-item mx-3">
-                                <a href="renderBlog.php?iActive=4"
-                                    class="<?php echo ($iActive == 4 ? "active" : "") ?> nav-link"><i
-                                        class="fa fa-blog mx-2"></i>Blog</a>
+                                <a href="actorByName.php?iActive=4" target="_blank"
+                                    class="<?php echo ($iActive == 4 ? "active" : "") ?> nav-link">Actor</a>
                             </li>
                             <li class="nav-item mx-3">
-                                <a href="MyAbout.php?iActive=2"
-                                    class="<?php echo ($iActive == 2 ? "active" : "") ?> nav-link"><i
-                                        class="fa fa-user mx-2"></i>About</a>
-                            </li>
-                            <li class="nav-item mx-3">
-                                <?php
-                                if ($bIsLogin) {
-                                    ?>
-                                <li><a href="userDashboard.php?iActive=3"
-                                        class="<?php echo ($iActive == 3 ? "active" : "") ?> nav-link"><i
-                                            class="fa-solid fa-grip-vertical mx-2"></i>Dashboard</a></li>
-                            <?php } ?>
+                                <a href="MyAbout.php?iActive=2" target="_blank"
+                                    class="<?php echo ($iActive == 2 ? "active" : "") ?> nav-link">About</a>
                             </li>
 
                             <?php
                             if ($bIsLogin) {
                                 ?>
-                                <li class="nav-item mx-3">
+                                <li class="nav-item mx-3 hide">
                                     <a href="logOut.php" class="btnWAN btn-sm nav-link mx-3">Log Out</a>
                                 <?php } else { ?>
-                                <li class="nav-item mx-3">
+                                <li class="nav-item mx-3 hide">
                                     <a href="loginScreen.php" class="btnWAN btn-sm nav-link login">Log in
                                     </a>
                                 </li>
-                                <li class="col">
+                                <li class="col hide">
                                     <a href="registrationForm.php" class="btnWAN nav-link register mx-3">Register</a>
                                 </li>
                             <?php } ?>
                         </ul>
                     </div>
+                </div>
+                <div class="col-3 search-box">
+                    <form class="d-flex">
+                        <input class="form-control" type="search" id="idSearchBar" placeholder="Search"
+                            aria-label="Search">
+                        <a class="btnWAN btn-outline-success mx-2" id="idSearchSubmit" style="cursor: pointer;"
+                            >Search</a>
+                    </form>
                 </div>
             </div>
         </div>

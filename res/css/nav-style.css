@@ -17,7 +17,7 @@
     color: var(--skin-color);
 }
 
-.navbar .logo a::before {
+/* .navbar .logo a::before {
     content: '';
     position: absolute;
     width: 20px;
@@ -37,7 +37,7 @@
     border-right: 5px solid var(--skin-color);
     top: 9px;
     left: 250px;
-}
+} */
 
 .navbar .nav-toggler {
     height: 40px;
@@ -110,6 +110,13 @@
     .navbar {
         padding-top: 30px;
         transition: all 1s ease-in-out;
+    }
+
+    .search-box{
+        width: 100vw;
+    }
+    #idSearchBar{
+        width: 100vw;
     }
 }
 

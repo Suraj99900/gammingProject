@@ -419,7 +419,7 @@ p{
     color: var(--skin-color);
 }
 
-.aside .logo a::before {
+/* .aside .logo a::before {
     content: '';
     position: absolute;
     width: 20px;
@@ -439,7 +439,7 @@ p{
     border-right: 5px solid var(--skin-color);
     top: 0;
     right: 0;
-}
+} */
 
 .aside .nav-toggler {
     height: 40px;

@@ -4,7 +4,7 @@
 <head>
 
     <!-- Title -->
-    <title>Smart Place || Showcasing Expertise and Insights</title>
+    <title>sexplace || Showcasing Expertise and Insights</title>
 
     <!-- Favicon -->
     <link rel="icon" href="../res/img/DashboardNewImage-transparent.png" type="image/x-icon">
@@ -16,19 +16,19 @@
     <meta name="keywords"
         content="portfolio, blogging, personal branding, [specific skills], [industry topics],PHP,Development, career growth, insights, tutorials">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://smartpoly.myportfolio.com">
+    <link rel="canonical" href="https://smartpoly.sexplace.com">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Smart Place - Showcasing Expertise and Insights">
+    <meta property="og:title" content="sexplace - Showcasing Expertise and Insights">
     <meta property="og:description"
         content="A portfolio that highlights skills and insights, along with a blog featuring tutorials and industry trends.">
     <meta property="og:image" content="../res/img/PortfolioIcon.png">
-    <meta property="og:url" content="https://smartpoly.myportfolio.com">
+    <meta property="og:url" content="https://smartpoly.sexplace.com">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Smart Place - Portfolio & Blog">
+    <meta name="twitter:title" content="sexplace - Portfolio & Blog">
     <meta name="twitter:description"
         content="Explore my portfolio and read my blog for the latest tutorials and insights in [industry].">
     <meta name="twitter:image" content="../res/img/DashboardNewImage-transparent.png">

@@ -27,7 +27,7 @@ $iId = input::request('id')?input::request('id'):'';
     <section class="about section " id="about">
         <!-- <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb pt-4">
-                <li class="breadcrumb-item"><a href="MyPortfolio.php">Home</a></li>
+                <li class="breadcrumb-item"><a href="sexplace.php">Home</a></li>
                 <li class="breadcrumb-item"><a href="renderBlog.php">Blog</a></li>
                 <li class="breadcrumb-item active" id="blogTitleId" aria-current="page"></li>
             </ol>

@@ -24,7 +24,7 @@ $iActive = isset($_GET['iActive']) ? $_GET['iActive'] : '';
 
         <ul class="nav">
             <li>
-                <a href="MyPortfolio.php" class="<?php echo ($iActive == "" ? "active" : "") ?>"><i
+                <a href="sexplace.php" class="<?php echo ($iActive == "" ? "active" : "") ?>"><i
                         class="fa fa-home"></i>Home</a>
             </li>
 
