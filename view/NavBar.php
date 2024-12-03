@@ -40,6 +40,11 @@ $iActive = isset($_GET['iActive']) ? $_GET['iActive'] : '';
                                         class="fa fa-home mx-2 "></i>Home</a>
                             </li>
                             <li class="nav-item mx-3">
+                                <a href="searchBook.php?iActive=6"
+                                    class="<?php echo ($iActive == 6 ? "active" : "") ?> nav-link"><i
+                                        class="fa fa-book mx-2"></i>Download Books</a>
+                            </li>
+                            <li class="nav-item mx-3">
                                 <a href="renderBlog.php?iActive=4"
                                     class="<?php echo ($iActive == 4 ? "active" : "") ?> nav-link"><i
                                         class="fa fa-blog mx-2"></i>Blog</a>

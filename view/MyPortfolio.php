@@ -39,7 +39,7 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
                     <h3 class="my-profession">
                         <span class="typing">Experienced Full Stack Developer</span>
                     </h3>
-                    <p class="" style="max-width: 800px; text-align: justify;">
+                    <p class="" style="max-width: 800px; text-align: justify;font-weight: bold;">
                         I am a highly skilled and adaptable full-stack developer and web designer with over two years of
                         hands-on experience in building impactful digital solutions. My expertise spans modern web
                         technologies, graphic and UI/UX design, mobile app development, and robust software solutions.
