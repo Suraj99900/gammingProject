@@ -4,10 +4,14 @@ function searchBooks() {
 
     // Make an AJAX request to the API
     $.ajax({
-         url: `https://booksearch.arcom.uz/api/book/search?keyword=${encodeURIComponent(keyword)}`,
+         url: `../ajaxFile/searchBook.php?sFlag=searchBook&keyword=${keyword}`,
         method: 'GET',
         success: function (data) {
-            handleSearchSuccess(data);
+            if(data.success == true){
+                handleSearchSuccess(data.data);
+            }else{
+                responsePop('Error', 'Not Found.', 'error', 'ok');
+            }
         },
         error: function (xhr, status, error) {
             handleSearchError(xhr, status, error);
