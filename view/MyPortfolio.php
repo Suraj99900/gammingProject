@@ -29,17 +29,22 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 <!-- main Content start -->
 <div class="main-content">
     <!-- home section start -->
-    <section class="home section " id="home">
+
+    <!-- <div class="particle-background">
+        <canvas id="particles"></canvas>
+    </div> -->
+
+    <section class="home section px-lg-5" id="home">
         <div class="container-fluid home padd-15">
-            <div class="row">
-                <div class="home-info col-md-4 px-5">
-                    <h3 class="hello">
+            <div class="row px-lg-5">
+                <div class="home-info base-color col-md-4 px-5">
+                    <h3 class="hello user-name">
                         Hello, I'm <span class="name">Suraj Jaiswal</span>
                     </h3>
                     <h3 class="my-profession">
                         <span class="typing">Experienced Full Stack Developer</span>
                     </h3>
-                    <p class="" style="max-width: 800px; text-align: justify;font-weight: bold;">
+                    <p class="" style="max-width: 800px; text-align: justify;">
                         I am a highly skilled and adaptable full-stack developer and web designer with over two years of
                         hands-on experience in building impactful digital solutions. My expertise spans modern web
                         technologies, graphic and UI/UX design, mobile app development, and robust software solutions.
@@ -47,7 +52,7 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
                         comprehensive approach to development. I am also well-versed in Android development, delivering
                         responsive and engaging applications tailored to client needs.
                     </p>
-                    <a href="#contact" class="btn hire-me">Get in Touch</a>
+                    <a href="#contact" class="btn hire-me">Get In Touch</a>
 
 
                 </div>
@@ -59,19 +64,19 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
     </section>
     <!-- home section end -->
 
-    <section class="section AI-section" id="AISection" style="min-height: auto !important;padding: 90px 0px;">
+    <section class="section AI-section px-lg-5" id="AISection" style="min-height: auto !important;padding: 90px 0px;">
         <div class="container-fluid padd-15">
             <div class="row">
                 <div class="section-title padd-15 px-5">
                     <h2>Medical Recommendation System</h2>
                 </div>
                 <div class="px-5 card-box-AI" data-bs-theme="dark">
-                    <div class="row" style="margin: 0px;padding: 0px;">
+                    <div class="row px-lg-5" style="margin: 0px;padding: 0px;">
                         <div class="col-lg-4 col-sm-12 col-md-4 p-2">
                             <a data-bs-toggle="offcanvas" id="idDisesePredectionSystem" href="#idDPS" role="button"
                                 aria-controls="idDPS">
-                                <div class="card shadow-lg  p-3">
-                                    <h4 class="text-center c-text-vl">Disease Prediction System</h4>
+                                <div class="card transparent-card  p-3">
+                                    <h6 class="text-center c-text-vl">Disease Prediction System</h6>
                                     <div class="card-body ">
                                         <div class="home-img-box padd-15">
                                             <img src="../res/img/DPS-img.jpg" style="width: 15rem; height:15rem;">
@@ -83,8 +88,8 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
                         </div>
                         <div class="col-lg-4 col-sm-12 col-md-4 p-2">
                             <a href='#'>
-                                <div class="card shadow-lg  p-3">
-                                    <h4 class="text-center c-text-vl">Hypertension Prediction System</h4>
+                                <div class="card transparent-card  p-3">
+                                    <h6 class="text-center c-text-vl">Hypertension Prediction System</h6>
                                     <div class="card-body">
                                         <div class="home-img-box padd-15">
                                             <img src="../res/img/hypertension-img.jpg"
@@ -96,8 +101,8 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
                         </div>
                         <div class="col-lg-4 col-sm-12 col-md-4 p-2">
                             <a href='#'>
-                                <div class="card shadow-lg  p-3">
-                                    <h4 class="text-center c-text-vl">Diabetes Prediction System</h4>
+                                <div class="card transparent-card  p-3">
+                                    <h6 class="text-center c-text-vl">Diabetes Prediction System</h6>
                                     <div class="card-body">
                                         <div class="home-img-box padd-15">
                                             <img src="../res/img/Daibetes-system-img.jpg"
@@ -115,7 +120,7 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 
 
     <!-- Blog section start -->
-    <section class="section blog-section" id="BlogSectionId">
+    <section class="section blog-section px-lg-5" id="BlogSectionId">
         <div class="container-fluid padd-15 px-5">
             <div class="row">
                 <div class="section-title padd-15">
@@ -123,7 +128,7 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
                 </div>
             </div>
             <div class="blog-box-animation" data-bs-theme="dark">
-                <div class="row" id="blogBoxId">
+                <div class="row px-lg-5" id="blogBoxId">
                 </div>
             </div>
         </div>
@@ -132,7 +137,7 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 
 
     <!-- About section start -->
-    <section class="about section pt-5 pb-5" id="about">
+    <section class="about section pt-5 pb-5 px-lg-5" id="about">
         <!-- <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb pt-4">
                 <li class="breadcrumb-item"><a href="MyPortfolio.php"> Home</a></li>
@@ -147,7 +152,7 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
                 </div>
             </div>
             <div class="about-content padd-15 px-5" data-bs-theme="dark">
-                <div class="row">
+                <div class="row px-lg-5">
                     <div class="about-text">
                         <h3>My name is Suraj Jaiswal and I am a <span>Full Stack Developer</span></h3>
                         <p>I am a versatile web designer and full-stack developer with over a year of extensive
@@ -160,7 +165,7 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
                             solutions, I am here to help bring your vision to life.</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row px-lg-5">
                     <div class="personal-info padd-15">
                         <div class="row">
                             <div class="info-item padd-15">
@@ -245,7 +250,7 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row px-lg-5">
                     <div class="education padd-15">
                         <h3 class="title">Education</h3>
                         <div class="row">
@@ -287,7 +292,7 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
                             Experience
                         </h3>
 
-                        <div class="row">
+                        <div class="row px-lg-5">
                             <div class="timline-box padd-15">
                                 <div class="timeline shadow-dark">
                                     <!-- Timeline item -->
@@ -333,7 +338,7 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 
     <!-- FAQ section Start -->
 
-    <section class="faq section pt-5" id="faq">
+    <section class="faq section pt-5 px-lg-5" id="faq">
         <div class="container-fluid padd-15 px-5">
             <div class="row">
                 <div class="section-title padd-15">
@@ -342,7 +347,7 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
             </div>
 
             <div class="faq_box" data-bs-theme="dark">
-                <div class="row">
+                <div class="row px-lg-5">
                     <div class="faq_img padd-15 px-5">
                         <img src="../res/img/faq_1.png" alt="">
                         <div class="faq_img__inner">
@@ -422,7 +427,7 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 
 
     <!-- Contact section start -->
-    <section class="contact section  " id="contact">
+    <section class="contact section  px-lg-5" id="contact">
         <div class="container-fluid padd-15 px-5">
             <div class="row">
                 <div class="section-title padd-15">
@@ -519,8 +524,8 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 
 
 <!-- style switcher start -->
-<div class="style-switcher">
-    <div class="style-switcher-toggler s-icon">
+<div class="style-switcher hide hide">
+    <div class="style-switcher hide-toggler s-icon">
         <i class="fas fa-cog fa-spin"></i>
     </div>
     <div class="day-night s-icon">
@@ -633,7 +638,7 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 <!-- include footer section -->
 <?php include_once "./CDN_Footer.php" ?>
 <script src="../controller/ChatBot.js"></script>
-
+<script src="../res/js/partical.js"></script>
 <script>
 
     $(document).ready(() => {
@@ -653,8 +658,8 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
                         var limitedBlogData = ele.blog_data.split(" ").slice(0, 80).join(" ") + '...';
 
                         sTemplate += `
-                        <div class="col-lg-6 col-sm-12 col-md-6 p-2">
-                            <a href = 'BlogPage.php?iActive=4&id=${ele.id}'><div class="card p-3 shadow-lg">
+                        <div class="col-lg-6 col-sm-12 col-md-6 p-2 ">
+                            <a href = 'BlogPage.php?iActive=4&id=${ele.id}'><div class="card transparent-card p-3">
                                 <h3 class="c-text-vl">${ele.title}</h3>
                                 <div  class="c-text-vl" class="card-body">
                                     <p class="card-text">${limitedBlogData}</p>

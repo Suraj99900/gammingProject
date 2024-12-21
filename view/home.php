@@ -278,8 +278,8 @@ $bIsLogin = $_SESSION['is_login'] ? $_SESSION['is_login'] : false;
     <!-- main container end  -->
 
     <!-- style switcher start -->
-    <div class="style-switcher">
-        <div class="style-switcher-toggler s-icon">
+    <div class="style-switcher hide">
+        <div class="style-switcher hide-toggler s-icon">
             <i class="fas fa-cog fa-spin"></i>
         </div>
         <div class="day-night s-icon">

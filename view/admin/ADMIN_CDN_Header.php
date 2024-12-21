@@ -32,4 +32,4 @@
     <link rel="stylesheet" href="../../res/css/admin-style.css">
     <title>Game Exchange Point's</title>
 </head>
-<body>
+<body class="dark">

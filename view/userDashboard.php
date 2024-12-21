@@ -42,13 +42,13 @@ if (!$bIsLogin) {
                 <aside>
                     <ul>
                         <li>
-                            <a href="userDashboard.php" class="shadow-lg p-3 mb-5 rounded active"><i
+                            <a href="userDashboard.php" class="transparent-card p-3 mb-5 rounded active"><i
                                     class="fa-regular fa-id-card"></i>
                                 <h5>Personal Info</h5>
                             </a>
                         </li>
                         <li>
-                            <a href="BlogManage.php?iActive=3" class="shadow-lg p-3 mb-5 rounded"><i
+                            <a href="BlogManage.php?iActive=3" class="transparent-card p-3 mb-5 rounded"><i
                                     class="fa-solid fa-blog"></i>
                                 <h5>Blog</h5>
                             </a>
@@ -58,7 +58,7 @@ if (!$bIsLogin) {
                 </aside>
 
                 <main>
-                    <div class="card shadow bg-card-low row userInfo padd-15 px-5">
+                    <div class="card transparent-card row userInfo padd-15 px-5">
                         <div class="mb-3 row">
                             <label for="ID" class="col-sm-4 col-form-label c-text"><b>ID:</b> </label>
                             <div class="col-sm-6">
@@ -136,8 +136,8 @@ if (!$bIsLogin) {
 
 
 <!-- style switcher start -->
-<div class="style-switcher">
-    <div class="style-switcher-toggler s-icon">
+<div class="style-switcher hide">
+    <div class="style-switcher hide-toggler s-icon">
         <i class="fas fa-cog fa-spin"></i>
     </div>
     <div class="day-night s-icon">

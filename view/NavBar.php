@@ -12,7 +12,7 @@ $iActive = isset($_GET['iActive']) ? $_GET['iActive'] : '';
 <!-- main container start -->
 
 <div class="main-container">
-    <nav class="navbar bg-card-high navbar-expand-lg navbar-light">
+    <nav class="navbar bg-card-high navbar-expand-lg navbar-light px-lg-5">
         <div class="container-fluid bg-card-high" style="display: block;">
             <div class="row" style="padding: 0px;margin: 0;">
                 <div class="col-md-6">
@@ -21,7 +21,7 @@ $iActive = isset($_GET['iActive']) ? $_GET['iActive'] : '';
                             <span>
                                 <?php echo FIRST_NAME ?>
                             </span>
-                            <span style="color: var(--text-black-900);">
+                            <span style="color: #c5c6c7;">
                                 <?php echo OTHER_NAME ?></span></a>
 
                     </div>
@@ -36,22 +36,22 @@ $iActive = isset($_GET['iActive']) ? $_GET['iActive'] : '';
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item mx-3">
                                 <a href="MyPortfolio.php"
-                                    class="<?php echo ($iActive == "" ? "active" : "") ?> nav-link"><i
+                                    class="<?php echo ($iActive == "" ? "active" : "") ?> nav-link bar-link"><i
                                         class="fa fa-home mx-2 "></i>Home</a>
                             </li>
                             <li class="nav-item mx-3">
                                 <a href="searchBook.php?iActive=6"
-                                    class="<?php echo ($iActive == 6 ? "active" : "") ?> nav-link"><i
+                                    class="<?php echo ($iActive == 6 ? "active" : "") ?> nav-link bar-link"><i
                                         class="fa fa-book mx-2"></i>Download Books</a>
                             </li>
                             <li class="nav-item mx-3">
                                 <a href="renderBlog.php?iActive=4"
-                                    class="<?php echo ($iActive == 4 ? "active" : "") ?> nav-link"><i
+                                    class="<?php echo ($iActive == 4 ? "active" : "") ?> nav-link bar-link"><i
                                         class="fa fa-blog mx-2"></i>Blog</a>
                             </li>
                             <li class="nav-item mx-3">
                                 <a href="MyAbout.php?iActive=2"
-                                    class="<?php echo ($iActive == 2 ? "active" : "") ?> nav-link"><i
+                                    class="<?php echo ($iActive == 2 ? "active" : "") ?> nav-link bar-link"><i
                                         class="fa fa-user mx-2"></i>About</a>
                             </li>
                             <li class="nav-item mx-3">
@@ -59,7 +59,7 @@ $iActive = isset($_GET['iActive']) ? $_GET['iActive'] : '';
                                 if ($bIsLogin) {
                                     ?>
                                 <li><a href="userDashboard.php?iActive=3"
-                                        class="<?php echo ($iActive == 3 ? "active" : "") ?> nav-link"><i
+                                        class="<?php echo ($iActive == 3 ? "active" : "") ?> nav-link bar-link"><i
                                             class="fa-solid fa-grip-vertical mx-2"></i>Dashboard</a></li>
                             <?php } ?>
                             </li>
@@ -69,13 +69,14 @@ $iActive = isset($_GET['iActive']) ? $_GET['iActive'] : '';
                                 ?>
                                 <li class="nav-item mx-3">
                                     <a href="logOut.php" class="btnWAN btn-sm nav-link mx-3">Log Out</a>
-                                <?php } else { ?>
+                                </li>
+                            <?php } else { ?>
                                 <li class="nav-item mx-3">
                                     <a href="loginScreen.php" class="btnWAN btn-sm nav-link login">Log in
                                     </a>
                                 </li>
                                 <li class="col">
-                                    <a href="registrationForm.php" class="btnWAN nav-link register mx-3">Register</a>
+                                    <a href="registrationForm.php" class="btnWAN nav-link register mx-3 mt-1">Register</a>
                                 </li>
                             <?php } ?>
                         </ul>

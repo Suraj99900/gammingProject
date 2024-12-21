@@ -66,4 +66,5 @@
     <title>Smartpoly</title>
 </head>
 
-<body>
+<body class="dark">
+<canvas id="particles"></canvas>

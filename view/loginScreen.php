@@ -13,7 +13,7 @@ include_once ABS_PATH_TO_PROJECT."view/NavBar.php";
 
 
     <!-- home section start -->
-    <section class="upload section " id="upload">
+    <section class="upload section px-5" id="upload">
 
         <!-- <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb pt-4">
@@ -30,7 +30,7 @@ include_once ABS_PATH_TO_PROJECT."view/NavBar.php";
                 </div>
             </div>
             <h3 class="contact-title padd-15 typing">Welcome G-Project </h3>
-            <div class="container shadow-lg p-lg-5  rounded" style="position: relative;">
+            <div class="container p-lg-5  rounded" style="position: relative;">
                 <form class="login-form">
                     <div class="row align-items-center p-3">
                         <div class="col-sm-12 col-md-12 col-lg-12">
@@ -63,8 +63,8 @@ include_once ABS_PATH_TO_PROJECT."view/NavBar.php";
 
 
 <!-- style switcher start -->
-<div class="style-switcher">
-    <div class="style-switcher-toggler s-icon">
+<div class="style-switcher hide">
+    <div class="style-switcher hide-toggler s-icon">
         <i class="fas fa-cog fa-spin"></i>
     </div>
     <div class="day-night s-icon">

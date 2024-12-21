@@ -21,12 +21,12 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
         </nav> -->
 
         <div class="container-fluid">
-            <div class="row px-5 p-lg-5 p-md-5 p-sm-3">
+            <div class="row px-lg-5 p-lg-5 p-md-5 p-sm-3">
                 <div class="section-title padd-15 mt-5">
                     <h2>About me</h2>
                 </div>
             </div>
-            <div class="about-content padd-15 px-5" data-bs-theme="dark">
+            <div class="about-content padd-15 px-lg-5" data-bs-theme="dark">
                 <div class="row">
                     <div class="about-text">
                         <h3>My name is Suraj Jaiswal and I am a <span>Full Stack Developer</span></h3>
@@ -210,8 +210,8 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 </div>
 
 <!-- style switcher start -->
-<div class="style-switcher">
-    <div class="style-switcher-toggler s-icon">
+<div class="style-switcher hide">
+    <div class="style-switcher hide-toggler s-icon">
         <i class="fas fa-cog fa-spin"></i>
     </div>
     <div class="day-night s-icon">

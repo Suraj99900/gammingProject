@@ -32,7 +32,7 @@ function handleSearchSuccess(data) {
         data.forEach((book) => {
             sTemplate += `
                 <div class="col-sm-12 col-md-6 col-lg-4 mb-4 px-5" data-bs-theme="dark">
-                    <div class="card shadow-sm h-100" style="border-radius: 10px; overflow: hidden;">
+                    <div class="card transparent-card h-100" style="border-radius: 10px; overflow: hidden;">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <h2 class="card-title" title="${book.name}">
                                 ${book.name}

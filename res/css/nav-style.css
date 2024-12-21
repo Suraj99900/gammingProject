@@ -1,9 +1,12 @@
 .main-content {
     padding-left: 0px !important;
 }
+.navbar{
+    z-index: 11;
+}
 
 .navbar .logo a {
-    color: var(--text-black-900);
+    color: #c5c6c7;
     font-weight: 700;
     padding: 30px 50px;
     font-size: 2rem;
@@ -13,17 +16,17 @@
 
 .navbar .logo a span {
     font-family: 'Clicker Script', cursive;
-    font-size: 2rem;
-    color: var(--skin-color);
+    font-size: 1.5rem;
+    color: #c5c6c7;
 }
 
-.navbar .logo a::before {
+/* .navbar .logo a::before {
     content: '';
     position: absolute;
     width: 20px;
     height: 20px;
-    border-bottom: 5px solid var(--skin-color);
-    border-left: 5px solid var(--skin-color);
+    border-bottom: 5px solid #c5c6c7;
+    border-left: 5px solid #c5c6c7;
     bottom: 12px;
     left: 5px;
 }
@@ -33,11 +36,11 @@
     position: absolute;
     width: 20px;
     height: 20px;
-    border-top: 5px solid var(--skin-color);
-    border-right: 5px solid var(--skin-color);
+    border-top: 5px solid #c5c6c7;
+    border-right: 5px solid #c5c6c7;
     top: 9px;
     left: 250px;
-}
+} */
 
 .navbar .nav-toggler {
     height: 40px;
@@ -58,7 +61,7 @@
 .navbar .nav-toggler span{
     height: 2px;
     width: 18px;
-    background: var(--skin-color);
+    background: #c5c6c7;
     display: inline-block;
     position: relative;
 }
@@ -67,7 +70,7 @@
     content: '';
     height: 2px;
     width: 18px;
-    background: var(--skin-color);
+    background: #c5c6c7;
     position: absolute;
     top: -6px;
     left: 0;
@@ -77,23 +80,28 @@
     content: '';
     height: 2px;
     width: 18px;
-    background: var(--skin-color);
+    background: #c5c6c7;
     position: absolute;
     top: 6px;
     left: 0;
 }
 
 .navbar li a {
-    font-size: 1.1rem;
+    font-size: .825rem;
+    line-height: 1.75rem;
     font-weight: bold;
     display: block;
-    color: var(--text-black-900);
+    color: #c5c6c7;
     padding: 5px 15px;
     /* border-bottom: 1px solid var(--bg-black-50); */
 }
 
+.bar-link{
+    border-bottom: 2px dotted #66fcf1;
+}
+
 .navbar li a.active {
-    color: var(--skin-color) !important;
+    color: #c5c6c7 !important;
 }
 
 @media (max-width:991px) {
@@ -121,5 +129,5 @@
 }
 
 .icons-color{
-    color: var(--skin-color);
+    color: #c5c6c7;
 }

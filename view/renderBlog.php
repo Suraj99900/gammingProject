@@ -19,13 +19,13 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
     <!-- Blog section start -->
     <section class="section blog-section" id="BlogSectionId">
         <div class="container-fluid">
-            <div class="row px-5 p-lg-5 p-md-5 p-sm-3">
+            <div class="row px-lg-5 p-lg-5 p-md-5 p-sm-1">
                 <div class="section-title padd-15 mt-5">
                     <h2>Blog</h2>
                 </div>
             </div>
             <div class="" data-bs-theme="dark">
-                <div class="row mx-5 p-2" id="blogBoxId">
+                <div class="row mx-lg-5 mx-sm-2 p-2" id="blogBoxId">
                 </div>
             </div>
         </div>
@@ -39,8 +39,8 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 
 
 <!-- style switcher start -->
-<div class="style-switcher">
-    <div class="style-switcher-toggler s-icon">
+<div class="style-switcher hide">
+    <div class="style-switcher hide-toggler s-icon">
         <i class="fas fa-cog fa-spin"></i>
     </div>
     <div class="day-night s-icon">
@@ -129,7 +129,7 @@ include_once ABS_PATH_TO_PROJECT . "classes/sessionCheck.php";
 
                         sTemplate += `
                         <div class="col-lg-6 col-sm-12 col-md-6 p-2">
-                            <a href = 'BlogPage.php?iActive=4&id=${ele.id}'><div class="card p-3 shadow-lg" data-bs-theme="dark">
+                            <a href = 'BlogPage.php?iActive=4&id=${ele.id}'><div class="card p-3 transparent-card" data-bs-theme="dark">
                                 <h3 class="c-text" >${ele.title}</h3>
                                 <div class="card-body c-text">
                                     <p class="card-text c-text">${limitedBlogData}</p>

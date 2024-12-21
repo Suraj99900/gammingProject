@@ -54,7 +54,7 @@ if (!$bIsLogin) {
                     <h2> Add Blog</h2>
                 </div>
             </div>
-            <div class="upload-btn-section shadow-lg p-lg-5 p-sm-5 p-md-5 mb-2 mx-5 bg-body rounded flex"
+            <div class="upload-btn-section transparent-card p-lg-5 p-sm-5 p-md-5 mb-2 mx-5  rounded flex"
                 style="position: relative;">
                 <form>
                     <a id="idAddBlogSubmit" class="btnWAN search float-end mb-4">Submit</a>
@@ -79,8 +79,8 @@ if (!$bIsLogin) {
 <!-- main container end  -->
 
 <!-- style switcher start -->
-<div class="style-switcher">
-    <div class="style-switcher-toggler s-icon">
+<div class="style-switcher hide">
+    <div class="style-switcher hide-toggler s-icon">
         <i class="fas fa-cog fa-spin"></i>
     </div>
     <div class="day-night s-icon">

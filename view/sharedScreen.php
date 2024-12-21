@@ -128,8 +128,8 @@ $RAZORPAY_KEY_ID = RAZORPAY_KEY_ID;
 <!-- main Content end-->
 
 <!-- style switcher start -->
-<div class="style-switcher">
-    <div class="style-switcher-toggler s-icon">
+<div class="style-switcher hide">
+    <div class="style-switcher hide-toggler s-icon">
         <i class="fas fa-cog fa-spin"></i>
     </div>
     <div class="day-night s-icon">
